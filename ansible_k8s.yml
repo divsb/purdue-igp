@@ -1,0 +1,9 @@
+- name: 'Kubernetes'
+  hosts: localhost
+  tasks:    
+    - name: Start minikube
+      command: 'minikube start'    
+              
+    - name: Create K8s services and pods
+      command: 'kubectl apply -f k8s.yml'     
+

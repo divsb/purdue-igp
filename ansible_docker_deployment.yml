@@ -6,8 +6,8 @@
       register: build_number
       
     - name: Build Docker image
-      command: 'docker build -t arwebcs/abctech:{{ build_number.stdout }} .'
+      command: 'docker build -t arwebcs/abctech .'
     
     - name: Run in container
-      command: 'docker run -d --rm --name "purdue-igp" -p 8081:8080 arwebcs/abctech:{{ build_number.stdout }}'      
+      command: 'docker run -d --rm --name "purdue-igp" -p 8081:8080 arwebcs/abctech'      
    

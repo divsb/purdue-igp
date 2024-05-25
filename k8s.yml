@@ -19,7 +19,7 @@ spec:
                 app: abc-tech-app
         spec:
             containers:
-                - image: arwebcs/abctech:5
+                - image: arwebcs/abctech
                   name: app
 ---
 

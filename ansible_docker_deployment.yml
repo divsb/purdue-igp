@@ -6,8 +6,8 @@
       register: build_number
       
     - name: Build Docker image
-      command: 'docker build -t arwebcs/abctech .'
+      command: 'docker build -t divsdevi/purdue-igp-docker .'
     
     - name: Run in container
-      command: 'docker run -d --rm --name "purdue-igp" -p 8081:8080 arwebcs/abctech'      
+      command: 'docker run -d --rm --name "purdue-igp" -p 8081:8080 divsdevi/purdue-igp-docker'      
    

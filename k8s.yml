@@ -19,8 +19,8 @@ spec:
                 app: abc-tech-app
         spec:
             containers:
-                - image: arwebcs/abctech
-                  name: app
+                - image: divsdevi/purdue-igp-docker:latest
+                  name: purdue-igp-docker
 ---
 
 kind: Service
@@ -32,5 +32,6 @@ spec:
     selector:
         app: abc-tech-app
     ports:
-        - port: 80 #cluster port
-          targetPort: 8080 #container image port
+        - port: 8080
+          targetPort: 8080 
+#container image port
